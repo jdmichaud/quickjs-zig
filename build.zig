@@ -146,7 +146,7 @@ pub fn build(b: *std.Build) void {
     }
     portableLinkLibC(libquickjs);
     if (target.result.os.tag == .windows) {
-        libquickjs.stack_size = 8388608;
+        libquickjs.stack_size = 0xF00000;
     }
     b.installArtifact(libquickjs);
 
@@ -178,7 +178,7 @@ pub fn build(b: *std.Build) void {
     });
 
     if (b.graph.host.result.os.tag == .windows) {
-        qjsc_host.stack_size = 8388608;
+        qjsc_host.stack_size = 0xF00000;
     }
 
     portableAddCSourceFiles(qjsc_host, .{
