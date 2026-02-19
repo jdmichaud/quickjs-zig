@@ -4,9 +4,9 @@
     .version = "0.10.1",
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
-        .@"quickjs-ng" = .{
-            .url = "git+https://github.com/quickjs-ng/quickjs/?ref=v0.10.1#5299e09100b97a5dd0ea0e73fa5caa4aa0b2d97c",
-            .hash = "N-V-__8AAJ6ZOwAqRvY64qRhZ9KrT8YuUvtVQxBECJxJwPyd",
+        .@"quickjs" = .{
+            .url = "https://github.com/bellard/quickjs/archive/f1139494d18a2053630c5ed3384a42bb70db3c53.tar.gz",
+            .hash = "N-V-__8AAFP3MACLqx3IPYUe7MVJki-nUn2Jtimo4Tx6u2s_",
         },
     },
     .paths = .{
